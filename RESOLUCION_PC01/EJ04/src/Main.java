@@ -14,7 +14,7 @@ public class Main {
 				txt = txt.replace(ch1,ch2);
 			}	
 			}
-		System.out.print(txt);
+		System.out.print("Texto convertido a mayusculas: "+txt);
 		}
 
 }
