@@ -6,19 +6,22 @@ public class App {
         String operacion = read.nextLine(), N1, N2;
         char OP;
         int n1=0, n2=0, op, e1 = operacion.indexOf(' '), e2 = operacion.lastIndexOf(' '), resultado;
+        boolean procede = true;
         N1 = operacion.substring(0, e1);
         try {
         n1 = Integer.parseInt(N1.trim());
         } catch (NumberFormatException e){
 			System.out.println("Wrong Input: "+N1);
+			procede = false;
 		}
         N2 = operacion.substring(e2+1, operacion.length());
         try {
         n2 = Integer.parseInt(N2.trim());
         } catch (NumberFormatException e){
 			System.out.println("Wrong Input: "+N2);
+			procede = false;
 		}
-        if (n1 != 0 && n2 != 0) {
+        if (procede) {
         OP = operacion.charAt(e1+1);
         op = (int)OP;
         switch (op) {
