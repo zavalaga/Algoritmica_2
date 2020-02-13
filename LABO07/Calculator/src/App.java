@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class App {
 	public static Scanner read = new Scanner(System.in);
 	public static void main(String[] args) {
-        System.out.println ("Escriba una operacion (suma, resta, multiplicacion, division) separando los operandos mediante un espacio: (EJ: 1 + 1)");
+        System.out.println ("Escriba una operacion (SUMA, RESTA, MULTIPLICACION, DIVISION) separando los operandos mediante un espacio: (EJ. 1 + 1)");
         String operacion = read.nextLine(), N1, N2;
         char OP;
         int n1=0, n2=0, op, e1 = operacion.indexOf(' '), e2 = operacion.lastIndexOf(' '), resultado;
